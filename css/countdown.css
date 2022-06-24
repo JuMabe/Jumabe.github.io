@@ -1,0 +1,241 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 40px 0;
+    color: #38dcbb;
+    font-size:100%;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.content{
+    background: url(../images/1567665.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+textarea:focus, input:focus, select:focus, select:active{
+    outline: none;
+    box-shadow:none;
+}
+.form-control:focus {
+    box-shadow: none;
+    outline: 0 none;
+}
+a{
+    text-decoration: none;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus {outline: none;}
+a,h1,h2,h3,h4,h5{cursor: pointer;}
+a:focus, a:hover{text-decoration: none;}
+a:focus {outline: none; outline-offset: 0;}
+ul{list-style: none;}
+.main {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.title {
+    color: #38dcbb;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.title::before,
+.title::after {
+    border-top: 5px solid #1098f7;
+    content: "";
+    display: inline-block;
+    margin: 0 1rem;
+    transform: translateY(-0.5rem);
+    width: 100px;
+}
+.tagname{
+    color: #38dcbb;
+    font-size: 70px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+.progress {
+    border: 2px solid #fff;
+    border-radius: 100px;
+    margin: 0 auto;
+    width: 70%;
+}
+.progress .progress-bar.six-sec-ease-in-out {
+    transition: width 2s ease-in-out 0s;
+}
+.progress-bar {
+    box-shadow: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    padding-right: 1px;
+}
+.progressive-effects {
+    margin: 20px 0;
+}
+.social-icons a {
+    border: 2px solid #fff;
+    border-radius: 100px;
+    display: inline-block;
+    height: 50px;
+    line-height: 57px;
+    margin-left: auto;
+    margin-right: 10px;
+    position: relative;
+    width: 50px;
+}
+.social-icons a:hover{
+    border-color: #38dcbb;
+}
+
+@media (max-width: 991px){
+    .main {
+        top: 30%;
+    }
+    .title {
+        font-size: 17px;
+    }
+    .tagname {
+        font-size: 40px;
+        letter-spacing: 2px;
+        line-height: 34px;
+        margin-top: 20px;
+    }
+    .progressive-effects {
+        margin: 30px 0;
+    }
+    img {
+        width: 40%;
+    }
+    .social-icons a {
+        height: 35px;
+        line-height: 37px;
+        width: 35px;
+    }
+}
+@media (max-width: 1000px){
+    .main {
+    top: 100%;
+}
+.progress{
+    width:100%;
+}
+}
+@media (max-width: 500px){
+    .title::before, .title::after {
+    width: 30px;
+}
+.title {
+    font-size: 14px;
+}
+.tagname {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+.progressive-effects {
+    margin: 25px 0;
+}
+.social-icons a {
+     margin-right: 1px;
+}
+}
+@media (max-width: 1000px){
+    .title::before, .title::after {
+    width: 18px;
+}
+.title {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.tagname {
+    font-size: 22px;
+}
+.main {
+    top: 30%;
+    width: 100%;
+    left:auto;
+    transform: translate(0%, 0%);
+}
+}
+.animation-area {
+	background: linear-gradient(to left, #000000, #9e9e9e);
+	width: 100%;
+	height: 100vh;
+}
+.box-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.box-area li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: rgba(255, 255, 255, 0.2);
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+}
+.box-area li:nth-child(1) {
+	left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+	left: 42%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+	left: 65%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.5s;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
