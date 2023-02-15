@@ -216,7 +216,7 @@ h1{
 }
 .nav ul li a:hover{
   text-decoration: none;
-  color: #ffeba7;
+  color: #303841;
 }
 .nav ul li a:after{
   display: block;
@@ -261,16 +261,14 @@ h1{
 
 .logo {
 	position: absolute;
-	top: 60px;
+	top: 42px;
 	left: 50px;
 	display: block;
 	z-index: 11;
 	transition: all 250ms linear;
-    max-width: 100%;
-    height: auto;
 }
 .logo img {
-	height: 26px;
+	height: 100px;
 	width: auto;
 	display: block;
 }
@@ -292,9 +290,9 @@ h1{
     font-size: 9vw;
     -webkit-text-stroke: 2px transparent;
     text-stroke: 2px transparent;
-    -webkit-text-fill-color: #ffeba7;
-    text-fill-color: #ffeba7;
-    color: #ffeba7;
+    -webkit-text-fill-color: #303841;
+    text-fill-color: #303841;
+    color: #303841;
   }
   .nav ul li a{
     font-size: 8vh;
